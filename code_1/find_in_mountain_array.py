@@ -54,9 +54,9 @@ MountainArray.length() - 会返回该数组的长度
 # This is MountainArray's API interface.
 # You should not implement it, or speculate about its implementation
 # """
-class MountainArray:
-   def get(self, index: int) -> int:
-   def length(self) -> int:
+# class MountainArray:
+#    def get(self, index: int) -> int:
+#    def length(self) -> int:
 
 def binary_search(mountain,target,l,r,key=lambda x:x):
     target = key(target)
