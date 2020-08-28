@@ -21,3 +21,17 @@
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/robot-return-to-origin
 '''
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        x = 0
+        y = 0
+        for m in moves:
+            if m == 'R':
+                x += 1
+            elif m == 'L':
+                x -= 1
+            elif m == 'U':
+                y += 1
+            elif m == 'D':
+                y -= 1
+        return x == y == 0
