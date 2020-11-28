@@ -15,3 +15,11 @@ arr2 中的每个元素都出现在 arr1 中
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/relative-sort-array
 '''
+class Solution:
+    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+        def mycmp(x):
+            return (0,rank[x]) if x in rank else (1,x)
+
+        rank = {x:i for i,x in enumerate (arr2)}
+        arr1.sort(key = mycmp)
+        return arr1
