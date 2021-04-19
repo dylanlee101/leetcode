@@ -20,8 +20,15 @@ jump-game-ii
 
 二分查找
 sqrtx
+valid-perfect-square
 
 search in rotated sorted array
 search a 2d matrix
 find minimum in rotated sorted array
+
+
+字典树
+friend-circle
+number-of-islands
+surrounded-regions
 '''
